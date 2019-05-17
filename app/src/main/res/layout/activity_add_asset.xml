@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAssetActivity">
+
+    <Button
+        android:background="#75C4C4C4"
+        android:textSize="22dp"
+        android:text="Scan Qr Code of the asset"
+        android:id="@+id/bScanImage"
+        android:onClick="scanImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ScrollView
+        android:layout_below="@id/bScanImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Properites of assets"
+            android:textColor="#000"/>
+
+        <EditText
+            android:paddingLeft="10dp"
+            android:hint="Asset ID"
+            android:id="@+id/eAssetId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:onClick="submit"
+        android:gravity="center"
+        android:text="Submit"
+        android:layout_margin="20dp"
+        android:background="#03A9F4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
