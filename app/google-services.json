@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "83926028480",
+    "firebase_url": "https://asset-tracking-1b843.firebaseio.com",
+    "project_id": "asset-tracking-1b843",
+    "storage_bucket": "asset-tracking-1b843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83926028480:android:fc702fe5718210e2",
+        "android_client_info": {
+          "package_name": "com.example.assettracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83926028480-hptr0qsch1brrd23fbv7uig398b3p6gf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.assettracking",
+            "certificate_hash": "74b2fe6deaeda7787db930b17e56b9ec3f5945a6"
+          }
+        },
+        {
+          "client_id": "83926028480-3tbm235al2mmjc9vc6590p857s0f8uim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWvI2xCFy2InB4V8ARUT-emjFUQmO1mqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83926028480-3tbm235al2mmjc9vc6590p857s0f8uim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

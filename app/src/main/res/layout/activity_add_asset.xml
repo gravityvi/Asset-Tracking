@@ -41,6 +41,31 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/eAssetName"
+            android:hint="Asset Name"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/eAssetType"
+            android:hint="Asset Type"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/eAssetLocation"
+            android:hint="Asset Location"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
 
     </LinearLayout>
 

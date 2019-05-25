@@ -17,5 +17,8 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent i = new Intent(this,new AddAssetActivity().getClass());
         startActivity(i);
+
+
+
     }
 }
