@@ -64,6 +64,15 @@
             android:paddingLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/eAssetCount"
+            android:inputType="number"
+            android:hint="Stock Count"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
 
 

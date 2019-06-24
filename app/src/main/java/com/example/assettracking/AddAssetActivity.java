@@ -29,11 +29,13 @@ public class AddAssetActivity extends AppCompatActivity implements AlreadyExists
     private EditText eAssetName;
     private EditText eAssetLocation;
     private EditText eAssetType;
+    private EditText eAssetCount;
 
     String assetId;
     String assetName;
     String assetType;
     String assetLocation;
+    String stockCount;
 
     private DatabaseReference databaseReference;
 
@@ -48,6 +50,7 @@ public class AddAssetActivity extends AppCompatActivity implements AlreadyExists
         eAssetType=findViewById(R.id.eAssetType);
         eAssetLocation=findViewById(R.id.eAssetLocation);
         eAssetName=findViewById(R.id.eAssetName);
+        eAssetCount= findViewById(R.id.eAssetCount);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Assets");
     }
@@ -86,11 +89,18 @@ public class AddAssetActivity extends AppCompatActivity implements AlreadyExists
             eAssetId.setError("cannot be empty");
             return;
         }
+        if(eAssetCount.getText().toString().isEmpty())
+        {
+            eAssetCount.setError("cannot be empty");
+            return;
+        }
 
         assetId = eAssetId.getText().toString();
         assetName = eAssetName.getText().toString();
         assetType = eAssetType.getText().toString();
         assetLocation = eAssetLocation.getText().toString();
+        stockCount = eAssetCount.getText().toString();
+
 
         databaseReference.child(assetId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -106,6 +116,7 @@ public class AddAssetActivity extends AppCompatActivity implements AlreadyExists
                     databaseReference.child(assetId).child("Name").setValue(assetName);
                     databaseReference.child(assetId).child("Location").setValue(assetLocation);
                     databaseReference.child(assetId).child("Type").setValue(assetType);
+                    databaseReference.child(assetId).child("StockCount").setValue(stockCount);
                     Toast.makeText(getApplicationContext(),"Asset Added",Toast.LENGTH_SHORT).show();
                     finish();
 

@@ -21,4 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void viewAsset(View view)
+    {
+        Intent i = new Intent(this,new UpdateStock().getClass());
+        startActivity(i);
+    }
+
+
 }
